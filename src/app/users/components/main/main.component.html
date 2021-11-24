@@ -1,0 +1,5 @@
+<section [ngClass]="{ 'd-none': noUserClass$ | async }">
+	<ul class="list-unstyled">
+		<app-users-user *ngFor="let user of visibleUsers$ | async" [user]="user"></app-users-user>
+	</ul>
+</section>
